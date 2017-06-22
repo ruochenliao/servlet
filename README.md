@@ -97,6 +97,6 @@ public class MyServlet implements Servlet {
 
 </web-app>
 
-
+7 最后把b1 这个文件整个放到tomcat 的/webapps 目录下
 
 
