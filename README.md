@@ -1,8 +1,13 @@
 # servlet
 servlet code
-只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1/my
-将会得到页面
+只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1_/my
+将会得到页面_
 Hello from MyServlet
+
+在url 输入http://localhost:8080/b1_/servletConfigDemo
+将会得到页面
+Admin:Harry Taciak
+Email:admin@example.com
 
 1、前期准备
 
