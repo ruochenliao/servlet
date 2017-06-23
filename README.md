@@ -1,10 +1,16 @@
 # servlet
 servlet code
-只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1_/my
+1 使用servlet + xml 配置构建网页：只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1_/my
 将会得到页面_
 Hello from MyServlet
 
-在url 输入http://localhost:8080/b1_/servletConfigDemo
+2 使用servlet + WebServlet 配置构建网页：在url 输入http://localhost:8080/b1_/servletConfigDemo
+将会得到页面
+Admin:Harry Taciak
+Email:admin@example.com
+
+3 使用GenericServlet+webServlet（不用实现繁琐的借口代码）
+或者在url 输入 http://localhost:8080/b1_/generic
 将会得到页面
 Admin:Harry Taciak
 Email:admin@example.com
