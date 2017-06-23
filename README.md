@@ -1,16 +1,15 @@
 # servlet
 servlet code
-1 使用servlet + xml 配置构建网页：只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1_/my
+1 在url 输人:http://localhost:8080/b1/my
 将会得到页面_
 Hello from MyServlet
 
-2 使用servlet + WebServlet 配置构建网页：在url 输入http://localhost:8080/b1_/servletConfigDemo
+2 在url 输入http://localhost:8080/b1/servletConfigDemo
 将会得到页面
 Admin:Harry Taciak
 Email:admin@example.com
 
-3 使用GenericServlet+webServlet（不用实现繁琐的借口代码）
-或者在url 输入 http://localhost:8080/b1_/generic
+3 在url 输入 http://localhost:8080/b1/generic
 将会得到页面
 Admin:Harry Taciak
 Email:admin@example.com
@@ -78,36 +77,8 @@ public class MyServlet implements Servlet {
 
 5 编译好这个java 文件，它会生成.class 文件
 
-6 5、别以为这就完事了。。配置web.xml同样是件大事。如果没有配置这个，100%报404（我才不会告诉你我蛋疼了好长时间）
 
-如果你用的是eclipse或者其他的工具的话，可以在建立项目时就选择创建默认的web.xml（内面的内容非常少，只有一些欢迎的页面设置）。
-我是用的tomcat里example项目中改的，将这个web.xml放在WEB-INF 目录下
-<?xml version="1.0" encoding="GBK"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	version="3.1">
 
-	<!-- 配置Servlet的名字 -->
-	<servlet>
-		<!-- 指定Servlet的名字，
-			相当于指定@WebServlet的name属性 -->
-		<servlet-name>firstServlet</servlet-name>
-		<!-- 指定Servlet的实现类 -->
-		<servlet-class>b1.MyServlet</servlet-class>
-	</servlet>
-	<!-- 配置Servlet的URL -->
-	<servlet-mapping>
-		<!-- 指定Servlet的名字 -->
-		<servlet-name>firstServlet</servlet-name>
-		<!-- 指定Servlet映射的URL地址，
-			相当于指定@WebServlet的urlPatterns属性-->
-		<url-pattern>/my</url-pattern>
-	</servlet-mapping>
-
-</web-app>
-
-7 最后把b1 这个文件整个放到tomcat 的/webapps 目录下
+6 最后把b1 这个文件整个放到tomcat 的/webapps 目录下
 
 
