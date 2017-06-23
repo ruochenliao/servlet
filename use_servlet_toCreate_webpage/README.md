@@ -1,5 +1,4 @@
-# servlet
-servlet code
+
 1 使用servlet + xml 配置构建网页：只使用servlet 来创建web front page，在url 输人:http://localhost:8080/b1_/my
 将会得到页面_
 Hello from MyServlet
